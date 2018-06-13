@@ -1,0 +1,25 @@
+<div class="col-md-12">
+        <div class="card">
+            <div class="header">
+                <h4 class="title">Active Users</h4>
+            </div>
+            <div class="content table-responsive table-full-width">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th *ngFor="let cell of tableData1.headerRow">{{ cell }}</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let row of tableData1.dataRows">
+                            <td *ngFor="let cell of row">{{cell}}</td>
+                            <td><button type="button" >Block User</button></td>
+                            <td><button type="button" >Remove User</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>

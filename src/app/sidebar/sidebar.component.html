@@ -1,0 +1,72 @@
+
+<div class="sidebar-wrapper">
+    <div class="logo">
+        <a class="simple-text">
+            <div class="logo-img">
+                <img src="../Qvoter/assets/img/angular2-logo.png" alt="">
+            </div>
+            Qvoters
+        </a>
+    </div>
+    <ul class="nav">
+        <li *ngIf="isNotMobileMenu()">
+            <a href="#">
+				<i class="ti-settings"></i>
+				<p>Settings</p>
+            </a>
+        </li>
+        <li class="divider" *ngIf="isNotMobileMenu()"></li>
+        <li  routerLinkActive="active" >
+            <a [routerLink]="['/dashboard']">
+                <i class="ti-panel"></i>
+                <p>Dashboard</p>
+            </a>
+        </li>
+        <li  routerLinkActive="active" >
+            <a [routerLink]="['/gallery']">
+                <i class="ti-gallery"></i>
+                <p>Images</p>
+            </a>
+        </li>
+        <li  routerLinkActive="active" >
+            <a [routerLink]="['/videos']">
+                <i class="ti-video-clapper"></i>
+                <p>Videos</p>
+            </a>
+        </li>
+        <li  routerLinkActive="active" >
+            <a [routerLink]="['/questionnaire']">
+                <i class="ti-text"></i>
+                    <p>Questionnaire</p>
+            </a>
+        </li>
+        <li  routerLinkActive="active" >
+            <a [routerLink]="['/user']">
+                <i class="ti-user"></i>
+                    <p>Users</p>
+            </a>
+        </li>
+        <li >
+            <a class="dropdown-btn">
+                <i class="ti-files"></i>
+                <p>Report</p>
+            </a>
+            <div class="dropdown-container">
+                    <a [routerLink]="['/report']">
+                        <i class="ti-user"></i>
+                        <p>User Report</p>
+                    </a>
+                    <a [routerLink]="['/report']">
+                        <i class="ti-files"></i>
+                        <p>Voting Report</p>
+                    </a>
+            </div>
+        </li>
+    </ul>
+</div>
+<!-- { path: 'dashboard', title: '',  icon: '', class: '' },
+    { path: 'gallery', title: 'Images',  icon:'ti-gallery', class: '' },
+    { path: '', title: '',  icon:'ti-video-clapper', class: '' },
+    { path: '', title: '',  icon:'', class: '' },
+    { path: '', title: '',  icon:'', class: '' },
+    { path: '', title: 'Report',  icon:'', class: '' }, -->

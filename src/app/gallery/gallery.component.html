@@ -1,0 +1,93 @@
+<div class="row">
+    <button type="button" (click)="addImages()" class="btn btn-success">Add Images</button>
+</div>
+<br>
+<div id="overlay1">
+        <div class="row">
+                <div class="col-md-12 col-md-offset-3">
+                    <h2>Add Image</h2>
+                    <form role="form" method="post" id="reused_form">
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label for="name">
+                                    Title:</label>
+                                <input type="text" class="form-control" id="firstname" name="firstname"  maxlength="50">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label for="email">
+                                    Category:</label>
+                                <input type="text" class="form-control" id="email" name="email"
+                                maxlength="50">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <label for="name">
+                                    Description:</label>
+                                <textarea class="form-control" type="textarea" id="message" name="message" placeholder="Your Message Here" maxlength="6000" rows="7"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                                <div class="col-sm-12 form-group">
+                                    <label for="name">
+                                        Select Images:</label>
+                                        <input type="file" name="image"  required />
+                                </div>
+                            </div>
+                        <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <button type="submit"(click)="hide()" class="btn btn-lg btn-success btn-block" id="btnContactUs">Submit </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>  
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-5"><img class="img-responsive" src="../Qvoter/assets/img/images.jpg" alt="Slide1"></div>
+        <div class="col-md-5"><img class="img-responsive" src="../Qvoter/assets/img/images1.jpg" alt="Slide1"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-5"><img class="img-responsive" src="../Qvoter/assets/img/images.jpg" alt="Slide1"></div>
+        <div class="col-md-5"><img (click)="show()" class="img-responsive" src="../Qvoter/assets/img/images1.jpg" alt="Slide1"></div>
+    </div>
+</div>
+<div id="overlay">
+<div class="style col-md-6">
+    <div class="row">  
+        <h4><strong>Title of the post</strong></h4>
+    </div>
+    <div class="row">    
+        <div id="myCarousel" class="carousel slide">        
+            <div class="carousel-inner">           
+                <div class="item active"> 
+                    <a ><img class="thumbnail" src="../Qvoter/assets/img/images.jpg" alt="Slide1"></a>     
+                </div>                                                                                  
+            </div>                                                               
+        </div><!-- End Carousel -->  
+        <div class="icons" >
+            <i class="ti-heart"></i> 39 Likes
+        </div>
+        <div class="comment">
+            <a href="#">view all 160 Comments</a>
+        </div>
+        <div class="comments">
+            <b>Sidharth Malhothra </b> This is awesome website
+        </div>
+    </div>
+</div>
+<div class="side col-md-4">
+    <div class="row">
+            <button class="button button2">Delete Image</button>
+    </div>
+</div>
+</div>
+       
+
+
+
+

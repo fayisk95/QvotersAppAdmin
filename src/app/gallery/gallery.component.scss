@@ -1,0 +1,76 @@
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 90%; /* Full width (cover the whole page) */
+  height: 90%; /* Full height (cover the whole page) */
+  top: 0; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white; /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+#overlay1 {
+  position: center; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 50%; /* Full width (cover the whole page) */
+  height: 50%; /* Full height (cover the whole page) */
+  top: 0; 
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:white; /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+form{
+  max-width: 300px;
+  background-color: white;
+  margin: 10,10,10,10;
+}
+img {
+  filter: gray; /* IE6-9 */
+  
+    margin-bottom:20px;
+}
+
+img:hover {
+  filter: none; /* IE6-9 */
+  -webkit-filter: grayscale(0); /* Google Chrome, Safari 6+ & Opera 15+ */
+ 
+}
+.style{
+  border: solid;
+  border-width:1px ;
+  margin-left: 150px;
+  // background-color: black
+  border-color: gray;
+  background: white
+
+}
+.picture{
+  max-width: 300px;
+}
+.button {
+  // background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.button2{
+background-color: red
+}
+.button1{
+  background-color: #4CAF50;
+}
+.side{
+  margin-left: 25px;
+  margin-top: 25px;
+  
+}

@@ -1,0 +1,22 @@
+
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-5 col-md-3">
+            <form *ngIf="!isSignedIn" [formGroup]="rForm"  >
+                <div class="form-login">
+                <h4>Login</h4>
+                <input type="text" formControlName="userName" class="form-control input-sm chat-input" placeholder="username" />
+                <br>
+                <input type="text" formControlName="userPassword" class="form-control input-sm chat-input" placeholder="password" />
+                <br>
+                <div class="wrapper">
+                <span class="group-btn">     
+                    <a (click)="Login()" class="btn btn-primary btn-md">login <i class="fa fa-sign-in"></i></a>
+                </span>
+                </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,62 @@
+<div class="row">
+        <pre> <button type="button" (click)="addQuestionaire()" class="btn btn-success">Add Questionaire</button></pre>
+</div>
+<div id="overlay">
+    <div  class="row">
+        <div *ngFor="let qustn of questions; let i = index" class="col-md-6 col-md-offset-3">
+                <h2>Add Questions</h2>
+                <form >
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <label for="name">
+                                Question 1:</label>
+                            <input type="text" class="form-control"   maxlength="50">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
+                            <label for="email">
+                                Options:</label>
+                            <input type="text" class="form-control"  maxlength="50">
+                            <input type="text" class="form-control"  maxlength="50">
+                            <input type="text" class="form-control"  maxlength="50">
+                            <input type="text" class="form-control"  maxlength="50">
+                        </div>
+                    </div>
+                    <div class="row">
+                            <div class="col-sm-12 form-group">
+                                <button  (click)="addQuestions()" class="btn btn-lg btn-success btn-block" >Add More Questions</button>
+                            </div>
+                    </div>
+                </form>
+                
+        </div>
+        
+    </div>
+    
+</div>
+<div class="col-md-12">
+        <div class="card">
+            <div class="header">
+                <h4 class="title">Active Users</h4>
+            </div>
+            <div class="content table-responsive table-full-width">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th *ngFor="let cell of tableData1.headerRow">{{ cell }}</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let row of tableData1.dataRows">
+                            <td *ngFor="let cell of row">{{cell}}</td>
+                            <td><button type="button" >View</button></td>
+                            <td><button type="button" >Remove</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+    </div>
